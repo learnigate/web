@@ -1,3 +1,16 @@
+# Intellij files
+.idea
+target
+learningate.iml
+learnigate.iml
+HELP.md
+pom.xml
+
+# Maven files
+.mvn
+mvnw
+mvnw.cmd
+
 # Compiled class file
 *.class
 
