@@ -21,4 +21,6 @@ public class SocialMedia {
     String profile;
     @Column
     Double rating;
+    @Column
+    String link;
 }

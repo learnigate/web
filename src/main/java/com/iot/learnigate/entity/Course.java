@@ -23,4 +23,6 @@ public class Course {
     private Double rating;
     @Column
     private Double difficulty;
+    @Column
+    String link;
 }

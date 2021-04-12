@@ -17,6 +17,7 @@ public class Path {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column
     private String pathName;
 
     @ManyToMany(cascade = CascadeType.ALL)
