@@ -1,5 +1,6 @@
 package com.iot.learnigate.entity;
 
+import java.util.List;
 import java.util.Set;
 import javax.persistence.*;
 import lombok.*;
@@ -25,12 +26,13 @@ public class Path {
         name = "path_course",
         joinColumns = {@JoinColumn(name = "path_id")},
         inverseJoinColumns = {@JoinColumn(name = "course_id")})
-    private Set<Course> courses;
+    private List<Course> courses;
 
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
         name = "path_social_media",
         joinColumns = {@JoinColumn(name = "path_id")},
         inverseJoinColumns = {@JoinColumn(name = "socialmedia_id")})
-    private Set<SocialMedia> socialMedias;
+    private List<SocialMedia> socialMedias;
+
 }

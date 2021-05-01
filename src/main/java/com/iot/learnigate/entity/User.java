@@ -1,5 +1,6 @@
 package com.iot.learnigate.entity;
 
+import java.util.List;
 import java.util.Set;
 import javax.persistence.*;
 import lombok.*;
@@ -24,5 +25,5 @@ public class User {
     private String email;
 
     @OneToMany
-    private Set<Path> paths;
+    private List<Path> paths;
 }
